@@ -1,0 +1,7 @@
+<% flash.each do |key, value| %>
+  <%= "#{key.upcase}! #{value}" %>
+<% end %>
+
+<% @user.errors.full_messages.each do |message| %>
+  <p><%= message %></p>
+<% end %>

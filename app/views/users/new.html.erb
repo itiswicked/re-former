@@ -21,8 +21,9 @@
   <%= submit_tag("Submit") %>
 <% end %>
 -->
+<%= render "user_notifications" %>
 
-<%= form_for @user, url: {action: "create"} do |f| %>
+<%= form_for @user do |f| %>
   <%= f.label "Username:" %>
     <%= f.text_field :username, placeholder: "Username" %>
   <%= f.label "Email:" %>

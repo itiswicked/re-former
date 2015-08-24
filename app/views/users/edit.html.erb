@@ -1,0 +1,11 @@
+<%= render "user_notifications" %>
+
+<%= form_for @user do |f| %>
+  <%= f.label "Username:" %>
+    <%= f.text_field :username %>
+  <%= f.label "Email:" %>
+    <%= f.text_field :email %>
+  <%= f.label "Password:" %>
+    <%= f.text_field :password %>
+  <%= f.submit "Submit" %>
+<% end %>
